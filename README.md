@@ -1,15 +1,14 @@
-# todolistbelajar
+# 🔐 Login UI - Modern Access Page
 
-- Front End
-1. Belajar Git & GitHub
-2. Belajar React JS
-3. Belajar Next JS
+A clean and responsive login page built for modern web applications.  
+This project focuses on user-friendly design, smooth interaction, and clean layout structure.
 
-- Back End
-  1. Node JS
-  2. Express JS
-  3. PHP / laravel
-  4. Python / Django
-  
-     
+🛠️ How to Use
+
+1. Clone this repo
+git clone https://github.com/username/login-ui.git
+
+📌 Tech Stack
+1. HTML5
+2. Tailwind CSS
 
