@@ -20,6 +20,7 @@
     </style>
   </head>
   <body>
+    <!-- Image -->
     <div class="flex">
       <div
         class="flex flex-col h-screen overflow-hidden rounded-tr-[32px] pl-[30px] pt-[46px] w-[685px] shrink-0 bg-[linear-gradient(336.99deg,#1053d5_100%)]"
@@ -39,6 +40,60 @@
             class="size-full object-cover object-left-top"
           />
         </div>
+      </div>
+
+      <!-- Login Form -->
+      <div class="flex flex-1 items-center justify-center">
+        <form
+          action="index.html"
+          class="flex flex-col w-[435px] shrink-0 rounded-3xl gap-10 p-6 bg-white"
+        >
+          <img
+            src="assets/images/logos/logo-35.svg"
+            class="w-[235px] mx-auto"
+            alt="logo"
+          />
+          <div class="flex flex-col gap-[30px]">
+            <div class="flex flex-col gap-3 text-center">
+              <p class="font-semibold text-2xl">Hey🙌🏻, Welcome Back!</p>
+              <p class="font-medium text-[#6a7686]">
+                Login to your account to continue!
+              </p>
+            </div>
+
+            <div id="Input-Containter" class="flex flex-col gap-4 w-full">
+              <!-- Input -->
+              <label class="relative">
+                <div
+                  class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-[#e8e8e8]"
+                >
+                  <img
+                    src="assets/images/logos/sms.svg"
+                    alt="icon"
+                    class="flex size-6 shrink-0"
+                  />
+                </div>
+                <p class="placeholder">Your email address</p>
+                <input
+                  type="email"
+                  class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-[#e8e8e8] pl-20 pr-6 pb-[14.5px] pt-[14.5px]"
+                  placeholder=""
+                />
+              </label>
+              <p class="font-medium text-sm text-[#6a7686]">
+                Forget Password?
+                <a
+                  href="index.html "
+                  class="font-semibold text-[#1053d5] hover:underline"
+                  >Reset Password</a
+                >
+              </p>
+              <button type="submit" class="btn btn-primary w-full font-bold">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
