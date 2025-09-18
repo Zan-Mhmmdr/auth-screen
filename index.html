@@ -45,7 +45,7 @@
       <!-- Login Form -->
       <div class="flex flex-1 items-center justify-center">
         <form
-          action="index.html"
+          action=""
           class="flex flex-col w-[435px] shrink-0 rounded-3xl gap-10 p-6 bg-white"
         >
           <img
@@ -63,7 +63,7 @@
 
             <div id="Input-Containter" class="flex flex-col gap-4 w-full">
               <!-- Input -->
-              <label class="relative">
+              <label class="group relative">
                 <div
                   class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-[#e8e8e8]"
                 >
@@ -73,12 +73,50 @@
                     class="flex size-6 shrink-0"
                   />
                 </div>
-                <p class="placeholder">Your email address</p>
+                <p
+                  class="placeholder font-medium text-[#6a7686] text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-placeholder-shown:top-1/2 transition-all duration-300"
+                >
+                  Your email address
+                </p>
                 <input
                   type="email"
-                  class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-[#e8e8e8] pl-20 pr-6 pb-[14.5px] pt-[14.5px]"
+                  class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-[#e8e8e8] pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-[#292d32] transition-300"
                   placeholder=""
                 />
+              </label>
+              <label class="group relative">
+                <div
+                  class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-[#e8e8e8]"
+                >
+                  <img
+                    src="assets/images/icons/lock.svg"
+                    class="flex size-6 shrink-0"
+                    alt="icon"
+                  />
+                </div>
+                <p
+                  class="placeholder font-medium text-[#6a7686] text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-placeholder-shown:top-[36px] group-focus-within:top-[25px] transition-all duration-300"
+                >
+                  Your password
+                </p>
+                <input
+                  id="passwordInput"
+                  type="password"
+                  class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-[#e8e8e8] pl-20 pr-16 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-[#292d32] transition-300 tracking-[0.3em]"
+                  placeholder=""
+                />
+
+                <button
+                  id="togglePassword"
+                  type="password"
+                  class="absolute transform -translate-y-1/2 top-1/2 right-6"
+                >
+                  <img
+                    src="assets/images/icons/eye.svg"
+                    class="flex size-6 shrink-0"
+                    alt="icon"
+                  />
+                </button>
               </label>
               <p class="font-medium text-sm text-[#6a7686]">
                 Forget Password?
@@ -96,5 +134,7 @@
         </form>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
