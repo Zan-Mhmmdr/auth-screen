@@ -19,17 +19,18 @@
       }
     </style>
   </head>
-  <body>
-    <!-- Image -->
-    <div class="flex">
+  <body class="min-h-screen">
+    <!-- Wrapper -->
+    <div class="flex flex-col lg:flex-row min-h-screen">
+      <!-- Gambar kiri -->
       <div
-        class="flex flex-col h-screen overflow-hidden rounded-tr-[32px] pl-[30px] pt-[46px] w-[685px] shrink-0 bg-[linear-gradient(336.99deg,#1053d5_100%)]"
+        class="hidden md:flex flex-col w-full md:max-w-[320px] lg:max-w-[685px] h-[300px] md:h-auto overflow-hidden rounded-tr-[32px] pl-6 pt-6 lg:pl-[30px] lg:pt-[46px] shrink-0 bg-[linear-gradient(336.99deg,#1053d5_100%)]"
       >
-        <p class="font-semibold text-lg text-[#deff6e]">
+        <p class="font-semibold text-sm md:text-base text-[#deff6e]">
           - Manage Stock and Merchants
         </p>
         <p
-          class="font-extrabold text-[42px] uppercase text-white mt-4 mb-[30px]"
+          class="font-extrabold text-xl md:text-2xl lg:text-[42px] uppercase text-white mt-4 mb-[20px] lg:mb-[30px]"
         >
           Optimized Inventory,<br />Effortless Workflow 🎯
         </p>
@@ -42,27 +43,32 @@
         </div>
       </div>
 
-      <!-- Login Form -->
-      <div class="flex flex-1 items-center justify-center">
+      <!-- Form Login -->
+      <div class="flex flex-1 items-center justify-center px-4 py-8">
         <form
           action=""
-          class="flex flex-col w-[435px] shrink-0 rounded-3xl gap-10 p-6 bg-white"
+          class="flex flex-col w-full max-w-md rounded-3xl gap-10 p-6 bg-white shadow-md"
         >
           <img
             src="assets/images/logos/logo-35.svg"
-            class="w-[235px] mx-auto"
+            class="w-[180px] md:w-[200px] mx-auto"
             alt="logo"
           />
+
           <div class="flex flex-col gap-[30px]">
+            <!-- Greetings -->
             <div class="flex flex-col gap-3 text-center">
-              <p class="font-semibold text-2xl">Hey🙌🏻, Welcome Back!</p>
-              <p class="font-medium text-[#6a7686]">
+              <p class="font-semibold text-xl md:text-2xl">
+                Hey🙌🏻, Welcome Back!
+              </p>
+              <p class="font-medium text-sm md:text-base text-[#6a7686]">
                 Login to your account to continue!
               </p>
             </div>
 
-            <div id="Input-Containter" class="flex flex-col gap-4 w-full">
-              <!-- Input -->
+            <!-- Input Fields -->
+            <div class="flex flex-col gap-4 w-full">
+              <!-- Email Input -->
               <label class="group relative">
                 <div
                   class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-[#e8e8e8]"
@@ -84,6 +90,8 @@
                   placeholder=""
                 />
               </label>
+
+              <!-- Password Input -->
               <label class="group relative">
                 <div
                   class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-[#e8e8e8]"
@@ -105,7 +113,6 @@
                   class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-[#e8e8e8] pl-20 pr-16 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-[#292d32] transition-300 tracking-[0.3em]"
                   placeholder=""
                 />
-
                 <button
                   id="togglePassword"
                   type="button"
@@ -118,15 +125,24 @@
                   />
                 </button>
               </label>
+
+              <!-- Forgot Password -->
               <p class="font-medium text-sm text-[#6a7686]">
                 Forget Password?
                 <a
-                  href="index.html "
+                  href="#"
                   class="font-semibold text-[#1053d5] hover:underline"
                   >Reset Password</a
                 >
               </p>
-             <button type="submit" class="btn bg-[linear-gradient(336.99deg,#1053d5_100%)] text-white p-3 rounded-3xl w-full font-bold">Sign In</button>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn bg-[linear-gradient(336.99deg,#1053d5_100%)] text-white p-3 rounded-3xl w-full font-bold"
+              >
+                Sign In
+              </button>
             </div>
           </div>
         </form>
